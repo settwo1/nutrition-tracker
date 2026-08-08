@@ -1,0 +1,8 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #080B10; color: #E2E8F0; font-family: 'Inter', 'Segoe UI', sans-serif; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0F1318; }
+::-webkit-scrollbar-thumb { background: #1E2530; border-radius: 4px; }
