@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { GOALS, C, DEFAULT_LIBRARY, todayKey, calcNutrients } from '@/lib/constants'
 import type { FoodItem, MealEntry } from '@/lib/constants'
 
@@ -400,7 +400,7 @@ export default function Home() {
                       <p style={{ margin:'2px 0 0', fontSize:9, color:C.accent }}>📡 {item.source}</p>
                     </div>
                     <button onClick={() => addSearchToLib(item)}
-                      style={{ background:'none', border:'none', cursor:'pointer', fontSize:18, title:'Salvar na biblioteca' }}>💾</button>
+                      title="Salvar na biblioteca" style={{ background:'none', border:'none', cursor:'pointer', fontSize:18 }}>💾</button>
                   </div>
                   <div style={{ display:'flex', gap:10, marginBottom:10, flexWrap:'wrap' }}>
                     <MacroTag k="kcal" val={n.kcal} suf=" kcal"/>
